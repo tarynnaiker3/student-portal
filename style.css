@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Container scales to phone width */
+.login-container {
+    position: relative;
+    width: 95%;
+    max-width: 420px;
+}
+
+/* Image always fits screen */
+.login-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+}
+
+/* Password box overlay */
+.password-input {
+    position: absolute;
+    top: 58%;            /* adjust slightly if needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    padding: 12px;
+    font-size: 16px;     /* prevents Android zoom */
+    border-radius: 6px;
+    border: 2px solid #444;
+    outline: none;
+}
+
+/* Slight polish on focus */
+.password-input:focus {
+    border-color: #6a5acd;
+}
+
